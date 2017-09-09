@@ -1,0 +1,21 @@
+{
+	"env": {
+		"browser": true,
+		"node"   : true,
+		"amd"    : true
+	},
+	"globals": {
+		"ENV"       : false
+	},
+	"parserOptions": {
+		// Enable ES6 Synthax
+		"ecmaVersion": 6,
+		"sourceType": "module"
+	},
+	"extends": "eslint:recommended",
+	"rules": {
+		// Add warning for todo, fixme terms
+		"no-warning-comments": [1, { "terms": ["todo", "fixme"], "location": "anywhere" }],
+		"no-global-assign": ["error"]
+	}
+}

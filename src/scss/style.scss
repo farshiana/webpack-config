@@ -1,0 +1,17 @@
+@import "fonts";
+
+%text {
+	font-family: "ArtifikaRegular";
+	font-size: 25px;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+	
+	width: 100%;
+	.lovely{
+		color: red;
+		@extend %text;
+	}
+}

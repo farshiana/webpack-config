@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<title>Webpack Config</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<link rel="icon" type="image/png" href="assets/appicon-48.png" />
+
+		<link rel="manifest" href="/manifest.json">
+
+		<link rel="icon" type="image/png" href="assets/appicon-48.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/appicon-144.png">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="mobile-web-app-capable" content="yes">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="lovely">Hello world!</div>
+		</div>
+
+		<%if (htmlWebpackPlugin.options.environment === 'dev') { %>
+				<script type="text/javascript">
+					console.log("Dev environment! :)");
+				</script>
+		<% } %>
+	</body>
+</html>

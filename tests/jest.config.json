@@ -1,0 +1,17 @@
+{
+	"globals": {
+		"ENV"        : "test",
+		"COMMIT_HASH": "test"
+	},
+	"moduleNameMapper": {
+		"^Source(.*)$"     : "<rootDir>/../src$1",
+		"^App(.*)$"        : "<rootDir>/../src/js/app$1",
+		"^Helpers(.*)$"    : "<rootDir>/../src/js/helpers$1"
+	},
+	"setupFiles": ["./jest.config.js"],
+	"verbose": true,
+	"moduleDirectories": ["node_modules", "src/js"],
+	"collectCoverage": false,
+	"collectCoverageFrom": ["src/js/**/*.test.js"],
+	"coverageReporters": ["lcov"]
+}
